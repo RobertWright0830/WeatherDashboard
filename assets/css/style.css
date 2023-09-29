@@ -1,0 +1,47 @@
+#grad {
+    background-image: linear-gradient(to right, rgb(61, 79, 168), rgb(2, 2, 60));
+}
+
+.titletext {
+    text-align: center;
+}
+
+.current-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.forecast-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.day-card {
+    flex-basis: calc(20% - 20px); 
+    border: 1px solid #ccc;
+    padding: 0; 
+    margin-bottom: 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.weather-column {
+    padding: 20px;
+}
+
+.day-card-content {
+    padding: 20px;
+}
+
+.day-card-content h2,
+.day-card-content i,
+.day-card-content h3 {
+    margin-bottom: 10px;
+}
+

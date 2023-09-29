@@ -1,3 +1,5 @@
+<!-- set up title bar and 5 day forecast card layout -->
+<!-- continue setting up sections with city search, list of localstorage cities, and current Weather -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +8,40 @@
     <title>Weather Dashboard</title>
     <script src="https://kit.fontawesome.com/db51f3e98d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    <section class="hero is-link">
+    
+    <section class="hero is-link" id="grad">
         <div class="hero-body">
-            <div class="container">
+            <div class="container titletext">
                 <h1 class="title is-1"><strong>Weather Dashboard</strong></h1>
             </div>
         </div>
     </section>
 
-    <div class="columns">
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
+    <!-- Main Content Container -->
+    <div class="main-container columns">
+        <!-- Search Column -->
+        <div class="search-column column is-one-quarter-desktop is-full-mobile">
+            <!-- Search Form -->
+            <h1 class="title is-2">Search for a City:</h1>
+            <div class="search-form">
+                <input class="input" type="text" placeholder="Search">
+                <button class="button is-info">Search</button>
+            </div>
+            <!-- Buttons from Local Storage -->
+            <div class="button-list">
+
+            </div>
+        </div>
+
+        <!-- Weather Column -->
+        <div class="weather-column column">
+            <div class="current-card card is-three-quarter-desktop is-full-mobile">
+                <div class="current-card-content">
+                    <h1 class="title is-2">City:<h1>
                     <h2 class="title is-4">Date</h2>
                     <i class="fa-solid fa-sun"></i>
                     <h3>Temp:</h3>
@@ -27,44 +49,38 @@
                     <h3>Humidity:</h3>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title is-4">Date</h2>
+        <h2  class="title is-4">5-Day Forecast:</h2>
+            <div class="forecast-cards card is-three-quarter-desktop is-full-mobile ">
+                <div class="day-card-content day-card">
+                    <h2 class="title is-4 has-text-white">Date</h2>
                     <i class="fa-solid fa-sun"></i>
                     <h3>Temp:</h3>
                     <h3>Wind:</h3>
                     <h3>Humidity:</h3>
                 </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title is-4">Date</h2>
+                <div class="day-card-content day-card">
+                    <h2 class="title is-4 has-text-white">Date</h2>
                     <i class="fa-solid fa-sun"></i>
                     <h3>Temp:</h3>
                     <h3>Wind:</h3>
                     <h3>Humidity:</h3>
                 </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title is-4">Date</h2>
+                <div class="day-card-content day-card">
+                    <h2 class="title is-4 has-text-white">Date</h2>
                     <i class="fa-solid fa-sun"></i>
                     <h3>Temp:</h3>
                     <h3>Wind:</h3>
                     <h3>Humidity:</h3>
                 </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                    <h2 class="title is-4">Date</h2>
+                <div class="day-card-content day-card">
+                    <h2 class="title is-4 has-text-white">Date</h2>
+                    <i class="fa-solid fa-sun"></i>
+                    <h3>Temp:</h3>
+                    <h3>Wind:</h3>
+                    <h3>Humidity:</h3>
+                </div>
+                <div class="day-card-content day-card">
+                    <h2 class="title is-4 has-text-white">Date</h2>
                     <i class="fa-solid fa-sun"></i>
                     <h3>Temp:</h3>
                     <h3>Wind:</h3>
