@@ -1,5 +1,6 @@
-<!-- set up title bar and 5 day forecast card layout -->
-<!-- continue setting up sections with city search, list of localstorage cities, and current Weather -->
+<!-- if the button-list is used, instead of placing value in search-form,
+just pass that value. don't add it back to the list just keep the original. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,11 +29,11 @@
             <!-- Search Form -->
             <h1 class="title is-2">Search for a City:</h1>
             <div class="search-form">
-                <input class="input" type="text" placeholder="Search">
-                <button class="button is-info">Search</button>
+                <input class="input" id="city-input" type="text" placeholder="Type a City Name">
+                <button class="button is-info is-full-width" id="search-button">Search</button>
             </div>
             <!-- Buttons from Local Storage -->
-            <div class="button-list">
+            <div class="button-list" id="buttonList">
 
             </div>
         </div>
@@ -89,5 +90,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
