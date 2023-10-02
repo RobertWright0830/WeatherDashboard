@@ -42,6 +42,12 @@ button {
     margin-bottom: 20px;
 }
 
+.current-card-content h3,
+.current-card-content i
+{
+    margin-bottom: 10px;
+}
+
 .forecast-cards {
     display: flex;
     flex-wrap: wrap;
